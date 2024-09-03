@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+         section{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            background-color: aqua;
+            height: 360px;
+        }
+        .box{
+            width: 100%;
+            text-align: center;
+            padding-top: 30px;
+        }
+        input,button{
+            width: 80%;
+            padding: 5px;
+            margin: 5px 0px;
+        }
+        .new{
+             display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            background-color:bisque;
+            height: 230px;
+        }
+        .box3{
+             margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .p1{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="box">
+            <input placeholder="Name" type="text">
+            <input placeholder="Email" type="email">
+            <input placeholder="URL" type="url">
+            <input placeholder="Address" type="text">
+            <input placeholder="pincode" type="number">
+            <button onclick="ShowData()">Submit</button>
+        </div>
+        <div class="box">
+            <img src="data:image/png;base64,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" alt="">
+            <h3>name</h3>
+            <p>name@gmail.com</p>
+            <p><i>pune deccan</i></p>
+            <p>pincode</p>
+        </div>
+
+          <script>
+            function ShowData(){
+            let name = document.getElementsByTagName('input')[0].value
+            let email = document.getElementsByTagName('input')[1].value
+            let url = document.getElementsByTagName('input')[2].value
+            let address = document.getElementsByTagName('input')[3].value
+            let pincode = document.getElementsByTagName('input')[4].value
+
+            document.getElementsByTagName('h3')[0].innerText = name
+            document.getElementsByTagName('p')[0].innerText = email
+            document.getElementsByTagName('img')[0].src = url
+            document.getElementsByTagName('i')[0].innerText = address
+            document.getElementsByTagName(p)[1].innerText = pincode
+        }
+
+          </script>  
+    </section>
+    <section class="new">
+        <div class="box2">
+            <p onclick="ShowData1()" class="p1"> Show the picture of keerthy suresh</p>
+             <p onclick="ShowData2()" class="p1"> Show the picture of tom cruise</p>
+        </div>
+        <div class="box3">
+           <img src="" alt="">
+           <img src="" alt="">
+        </div>
+        <script>
+            function ShowData1(){
+              let img =  document.getElementsByTagName('img')[1].src = "https://w0.peakpx.com/wallpaper/69/642/HD-wallpaper-keerthy-suresh-keerthy-suresh-tollywood-thumbnail.jpg"
+
+              document.getElementsByTagName('p')[2].innerText = img
+            }
+             function ShowData2(){
+              let img2 =  document.getElementsByTagName('img')[2].src = "https://static1.cbrimages.com/wordpress/wp-content/uploads/2022/05/tom-cruise-poster-for-top-gun-maverick-cropped.jpg"
+
+              document.getElementsByTagName('p')[3].innerText = img2
+            }
+        </script>
+    </section>
+    <script></script>
+</body>
+</html>

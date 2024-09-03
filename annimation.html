@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+       
+            height: 300px;
+            width: 200px;
+            background-color: bisque;
+            background-size: 100% 100%;
+        }
+    
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="main">
+             </div>
+            <div class="box">
+                <div>
+                    <input onkeyup="changeBox(value)" type="text" placeholder="enter border-radius">
+                </div>
+                <div>
+                    <input onkeyup="changeBox2(value)" type="text" placeholder="enter color">
+                </div>
+                <div>
+                    <input onkeyup="changeBox3(value)" type="text" placeholder="enter url">
+                </div>
+            </div>
+       
+    </section>
+    <script>
+        function changeBox(inputVal){
+            document.getElementsByTagName('div')[0].style.borderRadius = inputVal + '%'
+            console.log(inputVal);            
+        }
+        function changeBox2(inputVal){
+            document.getElementsByTagName('div')[0].style.backgroundColor = inputVal 
+            console.log(inputVal);            
+        }
+        function changeBox3(inputVal){
+            document.getElementsByTagName('div')[0].style.backgroundImage  ='url(' + inputVal +')'
+            console.log(inputVal);            
+        }
+    </script>
+</body>
+</html>

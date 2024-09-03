@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+        height: 500px;
+        width: 700px;
+        background-color: aquamarine;
+        display: flex;
+        justify-content: space-around;
+    }
+    textarea{
+            height: 300px;
+            width: 200px;
+        }
+        
+        div{
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+   <center>
+    <section>
+        <div>
+            <textarea  name="" id="">Maharashtra is one of the state of India.
+                 It is located in the western part of India. Mumbai is the capital of 
+                Maharashtra, and it is also known as the financial capital of India.</textarea>
+                <br>
+                <button onclick="ok()"> click</button>
+            <select onchange="selectStyle(value)"  name="" id="">
+                <option value="">--select the option--</option>
+                <option value="Replace">Replace</option>
+                <option value="Replaceall">ReplaceAll</option>
+            </select>
+        </div>
+        <div>
+            <textarea name="" id=""></textarea>
+        </div>
+    </section>
+    <script>
+         function ok(){
+            let name = document.getElementsByTagName('textarea')[0].innerText
+            document.getElementsByTagName('textarea')[1].innerText = name          
+        }
+    </script>
+   </center>
+</body>
+</html>

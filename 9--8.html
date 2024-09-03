@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section{
+            display: flex;
+            justify-content: space-between;
+            background-color: aquamarine;
+        }
+        li{
+            list-style: none;
+        }
+        .aa{
+            display: flex;
+            gap: 10px;
+        }
+        .btn{
+            display: none;
+        }
+        @media screen and (max-width:600px) {
+            .aa{
+                display: none;
+            }
+            .btn{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div>
+            <h3>Logo</h3>
+        </div>
+        <div>
+            <ul class="aa">
+                <li>home</li>
+                <li>about</li>
+                <li>search</li>
+                <li> back</li>
+            </ul>
+        </div>
+        <div>
+            <button class="btn">in</button>
+        </div>
+    </section>
+</body>
+</html>

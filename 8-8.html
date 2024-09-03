@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    section{
+        display: flex;
+    }
+    .box2{
+        background-color: rgba(214, 154, 75, 0.822);
+        height: 250px;
+        width: 500px;
+        text-align: left;
+        position: absolute;
+        margin-top: 50px;
+        padding: 50px;
+        justify-content: center;
+        z-index: -1;
+        animation-name: xyz;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+    .box2:hover{
+        
+    }
+    @keyframes xyz {
+        0%{
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+        25%{
+            margin-top: 0px;
+            margin-left: 500px;
+        }
+        
+    }
+
+    img{
+        height: 500px;
+        width: 700px;
+    }
+    p{
+        color: white;
+       
+    }
+</style>
+<body>
+    <section>
+        <div class="box">
+            <img src="https://c02.purpledshub.com/uploads/sites/62/2014/12/GettyImages-527816933-0d89309.jpg?w=1029&webp=1" alt="">
+        </div>
+        <div class="box2">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <br> Consequuntur impedit distinctio quisquam, soluta
+                <br> facere animi iste, quis non sit fugit cum! Enim <br>
+                 corporis aliquam saepe quae voluptas et odit ut.
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 <br> Consequuntur impedit distinctio quisquam, soluta
+                 <br> facere animi iste, quis non sit fugit cum! Enim <br>
+                  corporis aliquam saepe quae voluptas et odit ut.</p>
+        </div>
+    </section>
+</body>
+</html>

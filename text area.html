@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    section{
+        height: 500px;
+        width: 300px;
+        background-color: aquamarine;
+    }
+        button, input{
+        padding: 5%, 10%;
+        margin-top: 10px;
+        }
+        textarea{
+            height: 300px;
+            width: 200px;
+        }
+        div{
+            padding: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+   <center>
+    <section>
+        
+        <div>
+    
+            <center>  <textarea name="" id=""> Maharashtra is one of the state of India. It is located in the western
+                 part of India. Mumbai is the capital of Maharashtra, 
+                and it is also known as the financial capital of India.</textarea> 
+                <br>
+            <button onclick="getBold()" >bold</button>
+            <button onclick="getItalic()" >Italic</button>
+            <button onclick="getUnder()" >Under line</button>
+            <br>
+            <button onclick="getCap()" >Capitalize</button>
+            <button onclick="getUpper()" >Upper case</button>
+            <button onclick="getLow()" >Lower case</button>
+            <br>
+            <center>
+                <input onkeyup="getTextcolor(value)" placeholder="enter text color" type="text">
+            </center>
+            
+        </center>
+    
+     </div>
+        </section>
+   </center>
+<script>
+  function getTextcolor(inputValue){
+
+document.getElementsByTagName('textarea')[0].style.color = inputValue
+}  
+
+function getBold(innerText){
+
+    document.getElementsByTagName('textarea')[0].style.fontWeight = 700
+}
+
+function getItalic(innerText){
+
+document.getElementsByTagName('textarea')[0].style.fontStyle = 'italic'
+}
+
+function getUnder(innerText){
+
+document.getElementsByTagName('textarea')[0].style.textDecoration = 'underline'
+}
+
+function getUpper(innerText){
+
+document.getElementsByTagName('textarea')[0].style.textTransform = 'uppercase'
+}
+
+function getLow(innerText){
+
+document.getElementsByTagName('textarea')[0].style.textTransform = 'lowercase'
+}
+
+function getCap(innerText){
+
+document.getElementsByTagName('textarea')[0].style.textTransform = 'capitalize'
+}
+</script>
+</body>
+</html>
